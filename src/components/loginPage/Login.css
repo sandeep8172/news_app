@@ -11,7 +11,6 @@
 
 .login_inner_wrapper {
     width: 22vw;
-    height: 72vh;
     padding: 1rem 2rem;
     background-color: white;
     border-radius: 1rem;
@@ -93,4 +92,37 @@
     text-align: left;
     padding-left: 0.5rem;
     cursor: pointer;
+}
+
+
+/* media screen for tablet  */
+
+@media screen and (max-width:768px) {
+
+    .login_inner_wrapper {
+        width: 30vw;
+    }
+
+
+    .login_inner_wrapper h2 {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+
+
+    .login_inner_wrapper form p {
+        font-size: 0.7rem;
+    }
+}
+
+/* media screen for mobile  */
+@media screen and (max-width:480px) {
+    .login_wrapper {
+        font-size: 60%;
+    }
+
+    .login_inner_wrapper {
+        font-size: 60%;
+        width: 45vw;
+    }
 }

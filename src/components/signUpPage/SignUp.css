@@ -53,3 +53,18 @@
     cursor: pointer;
     color: white;
 }
+
+/* media scree for tablet  */
+
+@media screen and (max-width:768px) {
+    .signup_inner_wrapper {
+        width: 30vw;
+    }
+}
+
+/* media scree for mobile  */
+@media screen and (max-width:480px) {
+    .signup_inner_wrapper {
+        width: 45vw;
+    }
+}
