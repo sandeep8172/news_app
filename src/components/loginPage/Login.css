@@ -6,24 +6,27 @@
     align-items: center;
     height: 100vh;
     font-size: 100%;
+    background-color: rgb(100, 75, 168);
 }
 
 .login_inner_wrapper {
-    width: 30vw;
-    height: 70vh;
-    background-color: pink;
+    width: 22vw;
+    height: 72vh;
+    padding: 1rem 2rem;
+    background-color: white;
     border-radius: 1rem;
 }
 
 .login_inner_wrapper h2 {
     text-align: center;
     margin-top: 25%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
+    color: rgb(75, 47, 150);
 }
 
 .login_inner_wrapper>p {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 0.9rem;
 }
 
@@ -36,10 +39,58 @@
 }
 
 .login_inner_wrapper form input {
-    width: 80%;
+    width: 100%;
     height: 2.2rem;
     margin-bottom: 0.5rem;
-    padding-left: 1rem;
     border-radius: 0.3rem;
     border: 1px rgb(132, 129, 129) solid;
+}
+
+.login_inner_wrapper form input::placeholder {
+    padding-left: 0.7rem;
+}
+
+.login_inner_wrapper form p {
+    width: 100%;
+    color: blue;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.login_inner_wrapper form button {
+    margin: 0.5rem 0;
+    width: 100%;
+    height: 2.2rem;
+    background-color: rgb(100, 75, 168);
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.login_inner_wrapper .google_login,
+.login_inner_wrapper .github_login {
+    background-color: white;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    height: 2.2rem;
+    text-align: center;
+    border: 1px solid rgb(150, 146, 146);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.login_inner_wrapper .google_login button,
+.login_inner_wrapper .github_login button {
+    flex: 1;
+    background-color: white;
+    border: none;
+    text-align: left;
+    padding-left: 0.5rem;
+    cursor: pointer;
 }
