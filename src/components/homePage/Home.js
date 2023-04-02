@@ -6,33 +6,33 @@ import { useState, useEffect } from "react"
 
 
 const Home = () => {
-    const [data, setData] = useState([])
+    // const [data, setData] = useState([])
 
-    const getData = () => {
-        axios.get("https://newsapi.org/v2/everything?domains=wsj.com&apiKey=e11548daf27d42f4b48f2c7feb283b16")
-            .then((response) => {
-                console.log(response.data.articles[0].description)
-                console.log(response.data.articles[0].title)
-                console.log(response.data.articles[0].urlToImage)
-                const transformedData = [];
-                for (let key in response.data.articles) {
-                    const dataObj = {
-                        img: response.data.articles[key].urlToImage,
-                        title: response.data.articles[key].title,
-                        description: response.data.articles[key].description,
-                    }
-                    transformedData.push(dataObj);
-                    console.log(dataObj);
-                }
-                setData(transformedData);
-            }).catch((err) => {
-                console.log(err);
-            })
-    }
-    console.log(data);
-    useEffect(() => {
-        getData()
-    }, [])
+    // const getData = () => {
+    //     axios.get("https://newsapi.org/v2/everything?domains=wsj.com&apiKey=e11548daf27d42f4b48f2c7feb283b16")
+    //         .then((response) => {
+    //             console.log(response.data.articles[0].description)
+    //             console.log(response.data.articles[0].title)
+    //             console.log(response.data.articles[0].urlToImage)
+    //             const transformedData = [];
+    //             for (let key in response.data.articles) {
+    //                 const dataObj = {
+    //                     img: response.data.articles[key].urlToImage,
+    //                     title: response.data.articles[key].title,
+    //                     description: response.data.articles[key].description,
+    //                 }
+    //                 transformedData.push(dataObj);
+    //                 console.log(dataObj);
+    //             }
+    //             setData(transformedData);
+    //         }).catch((err) => {
+    //             console.log(err);
+    //         })
+    // }
+    // console.log(data);
+    // useEffect(() => {
+    //     getData()
+    // }, [])
 
     return (
         <div>
