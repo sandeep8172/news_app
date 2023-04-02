@@ -1,6 +1,7 @@
 import "./SignUp.css";
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
     const [input, setInput] = useState({
@@ -8,7 +9,7 @@ const SignUp = () => {
         password: "",
         confirmPass: "",
     });
-
+    const navigate = useNavigate();
     const inputValueHandler = (event) => {
         const data = event.target.value;
         setInput({
@@ -32,7 +33,7 @@ const SignUp = () => {
                         returnSecureToken: true,
                     }
                 )
-                .then(Response)
+                .then(Response => navigate("/", { replace: true }))
                 .catch((err) => alert(err.response.data.error.message));
     };
 
