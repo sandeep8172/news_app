@@ -33,7 +33,7 @@ const Login = () => {
                 }
             )
             .then((Response) => navigate("/home", { replace: true }))
-            .catch((err) => alert("user not found !"));
+            .catch((err) => alert(err.response.data.error.message));
     };
 
     const googleSignInHandler = () => {
