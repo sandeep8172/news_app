@@ -15,7 +15,6 @@ const Header = () => {
             listClass = "list_wrapper"
         }
     }
-    console.log(toggle);
 
     return (
         <header className="header_wrapper">
