@@ -70,6 +70,10 @@
         right: 1rem;
     }
 
+    .header_wrapper .menu_fixed {
+        position: fixed;
+    }
+
     .header_wrapper {
         height: auto;
         padding: 1rem 1rem;
@@ -121,5 +125,6 @@
         background-color: #fff;
         width: 10rem;
     }
+
 
 }

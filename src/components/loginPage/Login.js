@@ -39,7 +39,7 @@ const Login = () => {
     const googleSignInHandler = () => {
         signInWithPopup(auth, provider)
             .then((res) => navigate("/home", { replace: true }))
-            .catch((error) => console.log(error));
+            .catch((err) => alert(err.response.data.error.message));
     };
 
     const createAccountHandler = () => {

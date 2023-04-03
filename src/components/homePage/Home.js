@@ -6,8 +6,6 @@ import { useState, useEffect } from "react";
 
 const Home = () => {
     const [data, setData] = useState([]);
-    // const [topData, setTopData] = useState([])
-    // const [bottomData, setBottomData] = useState([])
 
     const getData = () => {
         axios.get("https://newsapi.org/v2/everything?q=tesla&from=2023-03-03&sortBy=publishedAt&apiKey=e11548daf27d42f4b48f2c7feb283b16")
@@ -26,16 +24,11 @@ const Home = () => {
                 console.log(err);
             })
     }
-    // console.log(data);
     useEffect(() => {
         getData()
     }, [])
     const topComponentData = data.slice(0, 4);
-    // setTopData(topComponentData);
     const bottomComponentData = data.slice(4);
-    // setBottomData(bottomComponentData);
-    console.log(topComponentData)
-    console.log(bottomComponentData)
 
 
 
