@@ -72,14 +72,14 @@ const Login = () => {
                     <button type="submit">Sign in</button>
                 </form>
                 <div className="google_login">
-                    <i class="fa-brands fa-google"></i>
+                    <i className="fa-brands fa-google"></i>
                     <button onClick={googleSignInHandler}>Sign in with Google</button>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i className="fa-solid fa-arrow-right"></i>
                 </div>
                 <div className="github_login">
-                    <i class="fa-brands fa-github"></i>
+                    <i className="fa-brands fa-github"></i>
                     <button>Sign in with Github</button>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i className="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>

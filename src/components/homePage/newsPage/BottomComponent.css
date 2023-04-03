@@ -4,10 +4,11 @@
 }
 
 .bottom_content {
+    padding: 0 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 7rem;
+    row-gap: 2rem;
 }
 
 .bottom_content div {
@@ -16,7 +17,6 @@
 
 .bottom_content div img {
     width: 100%;
-    height: 80%;
 }
 
 .bottom_content div h3 {
@@ -25,4 +25,32 @@
 
 .bottom_content div p {
     margin-top: 0.5rem;
+}
+
+/* media screen for mobile */
+
+@media screen and (max-width:480px) {
+    .bottom_content {
+        row-gap: 0;
+    }
+
+    .bottom_content div {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 2rem 0;
+        border-bottom: 1px rgb(207, 201, 201) solid;
+
+    }
+
+    .bottom_content div img {
+        width: 11rem;
+        height: 7rem;
+    }
+
+    .bottom_content div figure {
+        padding-right: 1rem;
+    }
+
 }

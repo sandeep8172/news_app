@@ -1,5 +1,6 @@
 .topContent_wrapper {
-    height: 75vh;
+    height: auto;
+    padding-bottom: 3rem;
     padding-left: 1rem;
     border-bottom: 2px solid black;
 }
@@ -51,4 +52,54 @@ section aside div h3 {
     margin-left: 1rem;
     font-weight: 600;
 
+}
+
+/* media screen for tablet */
+
+@media screen and (max-width:768px) {
+
+    html {
+        font-size: 70%;
+    }
+
+
+}
+
+/* media screen for mobile */
+
+@media screen and (max-width:480px) {
+    .topContent_wrapper section {
+        display: block;
+        width: 97%;
+    }
+
+    section .topLeft_content {
+        width: 100%;
+        padding-bottom: 2rem;
+        border-bottom: 1px rgb(207, 201, 201) solid;
+    }
+
+    section aside {
+        width: 100%;
+    }
+
+    section aside div {
+        padding: 2rem 0;
+        border-bottom: 1px rgb(207, 201, 201) solid;
+        flex-direction: row-reverse;
+
+    }
+
+    section aside div:last-child {
+        border-bottom: none;
+        padding-bottom: 0.5rem;
+    }
+
+    section aside div img {
+        width: 11rem;
+    }
+
+    section aside div h3 {
+        padding-right: 1rem;
+    }
 }
