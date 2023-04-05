@@ -8,7 +8,7 @@ const Home = () => {
     const [data, setData] = useState([]);
 
     const getData = () => {
-        axios.get("https://newsapi.org/v2/everything?q=tesla&from=2023-03-03&sortBy=publishedAt&apiKey=e11548daf27d42f4b48f2c7feb283b16")
+        axios.get("https://newsapi.org/v2/everything?q=apple&from=2023-04-04&to=2023-04-04&sortBy=popularity&apiKey=e11548daf27d42f4b48f2c7feb283b16")
             .then((response) => {
                 const transformedData = [];
                 for (let key in response.data.articles) {
